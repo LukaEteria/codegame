@@ -1,0 +1,151 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.cell {
+  padding: 12px;
+  border: 2px solid #999;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cell.unrevealed {
+  background-color: #f2e6d9;
+}
+
+.cell.red {
+  background-color: crimson;
+  color: white;
+}
+
+.cell.blue {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.cell.neutral {
+  background-color: lightgray;
+}
+
+.cell.assassin {
+  background-color: black;
+  color: white;
+}
+
+/* Spymaster view */
+.cell.hidden-red {
+  background-color: rgba(220, 20, 60, 0.3);
+}
+
+.cell.hidden-blue {
+  background-color: rgba(30, 144, 255, 0.3);
+}
+
+.cell.hidden-neutral {
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.cell.hidden-assassin {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.card {
+  width: 120px;
+  height: 70px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card.red {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.card.blue {
+  background-color: #3498db;
+  color: white;
+}
+
+.card.neutral {
+  background-color: #bdc3c7;
+  color: black;
+}
+
+.card.assassin {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.role-mark {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.role-mark.red {
+  background-color: #e74c3c;
+}
+.role-mark.blue {
+  background-color: #3498db;
+}
+.role-mark.neutral {
+  background-color: #bdc3c7;
+}
+.role-mark.assassin {
+  background-color: #2c3e50;
+}

@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.lobby, .game {
+  text-align: center;
+  padding: 1rem;
+}
+
+input, button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.card.red { background: #ff4d4d; color: white; }
+.card.blue { background: #4d79ff; color: white; }
+.card.neutral { background: #ccc; }
+.card.assassin { background: black; color: white; }
+
+.card.spymaster { opacity: 0.7; }
+
+.teams {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.team {
+  font-size: 1.2rem;
+}
+
+.winner {
+  font-size: 1.5rem;
+  color: green;
+  margin-top: 1rem;
+}
